@@ -1,5 +1,4 @@
 /* bench.c is the benchmarking /test program for mem memory management
-   bench.c is implemented as part of HW6, CSE374 22WI
 */
 
 #include <stdlib.h>
@@ -36,9 +35,6 @@ int main(int argc, char** argv ) {
     int LARGE_L = 20000;
     unsigned int SEED = (unsigned int)time(NULL);
 
-    /* write code to set the above values based on the input arguments
-     if there is not a corresponding input argument use the
-     default value in the spec. */
     if (argc >= 2) {
        NTRIALS = atoi(argv[1]);
     }
@@ -102,7 +98,6 @@ int main(int argc, char** argv ) {
     return EXIT_SUCCESS;
 }
 
-/* Define helper functions here. */
 void print_stats(clock_t start) {
     clock_t now = clock();
     uintptr_t total_size;
