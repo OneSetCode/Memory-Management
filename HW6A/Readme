@@ -1,6 +1,0 @@
-Zicheng Niu, Linh Pham
-https://gitlab.cs.washington.edu/cse374-23sp-students/cse374-23sp-HW6-niuzc-Lpham21
-
-By running 10000 trials with 50% of get memory rate, the provided object code can finish the job
-within 0.01 second, and usually less than 400000 bytes of memory are acquired, and the average 
-number of bytes in the free storage blocks are usually between 1500 to 15000;

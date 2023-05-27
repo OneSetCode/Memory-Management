@@ -11,6 +11,9 @@ bench: bench.o getmem.o freemem.o mem_utils.o
 	$(CC) $(CARGS) -o bench $^
 
 # object files
+bench.o: bench.c mem.h
+	$(CC) $(CARGS) -c bench.c
+
 getmem.o: getmem.c mem.h mem_impl.h
 	$(CC) $(CARGS) -c getmem.c
 	

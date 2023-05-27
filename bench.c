@@ -110,6 +110,7 @@ void print_stats(clock_t start) {
     uintptr_t n_free_blocks;
     uintptr_t avg_bytes_free;
     get_mem_stats(&total_size, &total_free, &n_free_blocks);
+    // avoid to be divided by 0
     if (n_free_blocks > 0) {
        avg_bytes_free = (total_free / n_free_blocks);
     } else {
