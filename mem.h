@@ -1,6 +1,4 @@
 /* mem.h is the public header for memory functions
-   The definitions here are shared with the user (bench) during
-   completion of HW6, CSE374 22WI
 */
 
 #ifndef MEM_H_
@@ -11,15 +9,11 @@
 #include <inttypes.h>
 
 /* Return a pointer to a new block of storage with at least 'size' bytes 
-   space.
-   The 'size' value must be positive.  If it is not, or if there is another
-   problem allocating the memory the function should return NULL. */
+   space. */
 void* getmem(uintptr_t size);
 
 /* Return the block of storage at location p to the pool of available free
-   storage. The pointer value p must be one that was obtained as the result
-   of a call to getmem. If p is NULL, then the call to freemem has no effect
-   and returns immediately. */
+   storage.  */
 void freemem(void* p);
 
 /* Store statistics about the current state of the memory manager in the
@@ -37,4 +31,4 @@ void get_mem_stats(uintptr_t* total_size, uintptr_t* total_free,
 /* Print a formatted listing on file f showing the blocks on the free list. */
 void print_heap(FILE * f);
 
-#endif  // MEM_H_
+#endif  
