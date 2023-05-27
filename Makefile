@@ -1,6 +1,3 @@
-# Makefile for mem memory system
-# muh, CSE 374, sp21
-
 CC = gcc
 CARGS = -Wall -std=c11
 
