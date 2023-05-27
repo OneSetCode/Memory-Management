@@ -34,11 +34,7 @@ extern uintptr_t totalmalloc;
    Blocks are ordered with strictly increasing memory addresses
    Block sizes are positive numbers and large than the minimum
    Blocks do not overlap
-   Blocks are not touching
-   If no errors are detected, this function should return silently. */
+   Blocks are not touching */
 void check_heap();
 
-/* Are there other helper functions that both getmem and freemem need?
-   If so, declare them here. */
-
-#endif  // MEM_IMPL_H_
+#endif  
