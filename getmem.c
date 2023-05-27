@@ -1,25 +1,19 @@
 /* getmem.c
    implements getmem (malloc) for memory system
-   CSE 374 HW6
 */
 
 #include <assert.h>
 #include "mem.h"
 #include "mem_impl.h"
 
-/* This code will be filled in by the students.  Your primary job is to
-   implement getmem */
-
 void splitBlock(freeNode* previous, freeNode* block, uintptr_t size);
 
-/* initialize global variables ?*/
 freeNode* freelist = NULL;
 uintptr_t totalmalloc = 0;
 
 void* getmem(uintptr_t size) {
    check_heap();
-  /* make sure you return a pointer to the usable memory that
-     is at least 'size' bytes long.*/
+   
    if (size <= 0) {
       return NULL;
    }
