@@ -1,5 +1,4 @@
 /* mem_utils.c utilities to support memory management system.
-   HW6, CSE 374
 */
 
 #include "mem.h"
